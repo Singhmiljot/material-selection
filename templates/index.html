@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Material Selector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Material Selector</h1>
+        
+        <div id="message" class="message"></div>
+
+
+
+        <form id="materialForm">
+            <label for="materialName">Material Name:</label>
+            <input type="text" id="materialName" name="materialName" required>
+            <button type="submit">Get Material Details</button>
+        </form>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Material Recommendations</h2>
+            <table id="materialTable">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Strength</th>
+                        <th>Weight</th>
+                        <th>Cost</th>
+                        <th>Thermal Resistance</th>
+                        <th>Mechanical Properties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Material data will be populated here -->
+                </tbody>
+            </table>
+            <div class="material-details" id="materialDetails">
+                <h3>Material Details</h3>
+                <div class="details-content">
+                    <div class="text-details">
+                        <p><strong>Name:</strong> <span id="detailName"></span></p>
+                        <p><strong>Applications:</strong> <span id="detailApplications"></span></p>
+                        <p><strong>Advantages:</strong> <span id="detailAdvantages"></span></p>
+                        <p><strong>Limitations:</strong> <span id="detailLimitations"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
